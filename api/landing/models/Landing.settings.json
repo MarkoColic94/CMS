@@ -1,0 +1,112 @@
+{
+  "connection": "default",
+  "collectionName": "landings",
+  "info": {
+    "name": "landing",
+    "description": "Landing pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "author": {
+      "model": "user",
+      "via": "landings",
+      "plugin": "users-permissions"
+    },
+    "MenuItem1": {
+      "type": "string"
+    },
+    "MenuItem2": {
+      "type": "string"
+    },
+    "MenuItem3": {
+      "type": "string"
+    },
+    "MenuItem4": {
+      "type": "string"
+    },
+    "Subheader": {
+      "type": "string"
+    },
+    "CTA1": {
+      "type": "string"
+    },
+    "CTA2": {
+      "type": "string"
+    },
+    "CTA3": {
+      "type": "string"
+    },
+    "STARTDATES": {
+      "type": "string"
+    },
+    "DURATION": {
+      "type": "string"
+    },
+    "CAMPUS": {
+      "type": "string"
+    },
+    "FEES": {
+      "type": "string"
+    },
+    "SECTION1_TITLE": {
+      "type": "string"
+    },
+    "SECTION1_CARD_1_HEADING": {
+      "type": "string"
+    },
+    "SECTION1_CARD_2_HEADING": {
+      "type": "string"
+    },
+    "SECTION1_CARD_3_HEADING": {
+      "type": "string"
+    },
+    "SECTION_1_CARD_2_PARAGRAPH": {
+      "type": "string"
+    },
+    "SECTION1_CARD_2_PARAGRAPH": {
+      "type": "string"
+    },
+    "SECTION1_CARD_3_PARAGRAPH": {
+      "type": "string"
+    },
+    "SECTION2_TITLE": {
+      "type": "string"
+    },
+    "SECTION2_CARD_1_IMG": {
+      "type": "string"
+    },
+    "SECTION2_CARD_1_HEADING": {
+      "type": "string"
+    },
+    "SECTION2_CARD_1_PARAGRAPH": {
+      "type": "string"
+    },
+    "SECTION2_CARD_2_ICON": {
+      "type": "string"
+    },
+    "SECTION2_CARD_2_HEADING": {
+      "type": "string"
+    },
+    "SECTION2_CARD_2_PARAGRAPH": {
+      "type": "string"
+    },
+    "test": {
+      "type": "richtext"
+    }
+  }
+}
